@@ -1,96 +1,133 @@
 <!DOCTYPE html>
-<html lang="de-CH" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="jetzt_Bestellen" content="Bestellen, kaufen, nach Hause liefern">
-    <title>Jetzt Bestellen</title>
-  </head>
-  <body>
-    <header>
-    <h3>Pizzeria "Zum Besten"</h3>
-    <hr>
-    <div style=background-color:yellow > <br>
-    <h2>Startseite von Pizzeria zum Besten</h2>
-      <nav>
-        <ul>
-          <li><a href="index.html">Startseite</a> </li>
-          <li><a href="pizza.html">Pizza</a> </li>
-          <li><a href="beilagen.html">Beilagen</a> </li>
-          <li><a href="getraenke.html">Zum trinken</a> </li>
-          <li><a href="jetzt_Bestellen.html">Jetzt Bestellen</a> </li>
-          <li><a href="feedback.html">Feedback?</a></li>
-        </ul>
-      </nav>
-    <br>
+<html lang="de-ch" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,  minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="jetzt_Bestellen" content="Bestellen, kaufen, nach Hause liefern">
+  <title>Jetzt Bestellen</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h3 class="header"> <strong> Pizzeria "Zum Besten"</strong></h3>
+
+    <div class="seitenkopf">
+      <h2 class="kopftext">Pizzeria "Zum Besten"</h2>
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="align-justify" class="svg-inline--fa fa-align-justify fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor"
+          d="M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z">
+        </path>
+      </svg>
+      <a class="start" href="index.html">Startseite</a>
+      <a class="pizza" href="pizza.html">Pizza</a>
+      <a class="beilagen" href="beilagen.html">Beilagen</a>
+      <a class="zum_trinken" href="getraenke.html">Getr\00e4 nke</a>
+      <a class="jetzt_bestellen" href="jetzt_Bestellen.html">Bestellen</a>
+      <a class="feedback" href="feedback.html">Feedback?</a>
+
     </div>
+    <br>
     <hr>
-    </header>
-  <h1>Jetzt Bestellen</h1>
+  </header>
+
+  <div class="text">
+    <h1>Jetzt Bestellen</h1>
     <p>
-      Hier nehem wir gern Ihre Bestellung auf.
+      Hier nehmen wir gerne Ihre Bestellung entgegen.
     </p>
-    <h2>Pizzen</h2>
-  <form class="Pizzen" method="post">
-    <input type="checkbox" name="Pizzen"> Margherita <br>
-    <input type="checkbox" name="Pizzen"> Capricciosa <br>
-    <input type="checkbox" name="Pizzen"> Prosciutto e funghi <br>
-    <input type="checkbox" name="Pizzen"> Prosciutti <br>
-    <input type="checkbox" name="Pizzen"> Funghi e Salami <br>
-    <input type="checkbox" name="Pizzen"> Calzone (zugedeckt) <br>
-    <input type="checkbox" name="Pizzen"> Diavolo (scharf) <br>
-    <input type="checkbox" name="Pizzen"> Aglio <br>
-    <input type="checkbox" name="Pizzen"> Tomato <br>
-  </form>
-  <br>
-  <h2>Beilagen</h2>
-  <form class="Beilagen" method="post">
-    <input type="checkbox" name="Beilagen"> Pizzabrot <br>
-    <input type="checkbox" name="Beilagen"> "Chnoblibrot" <br>
-    <input type="checkbox" name="Beilagen"> Gruener Salat <br>
-    <input type="checkbox" name="Beilagen"> "Zum Besten" Spezial-Salat <br>
-    <input type="checkbox" name="Beilagen"> Caprese <br>
-  </form>
-  <br>
-  <h2>Getraenke</h2>
-  <form class="Getränke"  method="post">
-    <input type="checkbox" name="Getränke"> Coca Cola 33cl <br>
-    <input type="checkbox" name="Getränke"> Pepsi 33cl <br>
-    <input type="checkbox" name="Getränke"> Fanta 33cl <br>
-    <input type="checkbox" name="Getränke"> Sprite 33cl <br>
-    <input type="checkbox" name="Getränke"> Evian still 33cl <br>
-    <input type="checkbox" name="Getränke"> Evian sparkling 33cl <br>
-  </form>
-  <br>
-  <form class="Wo essen" method="post">
-    <input type="radio" name="Wo essen" value="Im Restaurant geniessen"> Im Restaurant geniessen <br>
-    <input type="radio" name="Wo essen" value="Zu Hause geniessen"> Zu Hause geniessen <br>
-  </form>
-  <br>
-  <form class="Bestellen" method="post">
-    <input type="submit" name="Bestellen" value="Bestellung abschicken">
-  </form>
-  <h2>Vielen Dank für ihre Bestellung</h2>
-    <hr>
-    <footer>
-      <div style="background-color:yellow">
-      <p>
-        <strong><i>Oeffnungszeiten</i></strong> <br>
+  </div>
+
+  <div class="formular">
+
+    <div class="box1">
+      <h2>Pizzen</h2>
+      <form class="Pizzen" method="post">
+        <input type="checkbox" name="Pizzen"> Margherita <br>
+        <input type="checkbox" name="Pizzen"> Capricciosa <br>
+        <input type="checkbox" name="Pizzen"> Prosciutto e funghi <br>
+        <input type="checkbox" name="Pizzen"> Prosciutti <br>
+        <input type="checkbox" name="Pizzen"> Funghi e Salami <br>
+        <input type="checkbox" name="Pizzen"> Calzone (zugedeckt) <br>
+        <input type="checkbox" name="Pizzen"> Diavolo (scharf) <br>
+        <input type="checkbox" name="Pizzen"> Aglio <br>
+        <input type="checkbox" name="Pizzen"> Tomato <br>
+      </form>
+    </div>
+
+    <div class="box2">
+      <h2>Beilagen</h2>
+      <form class="Beilagen" method="post">
+        <input type="checkbox" name="Beilagen"> Pizzabrot <br>
+        <input type="checkbox" name="Beilagen"> "Chnoblibrot" <br>
+        <input type="checkbox" name="Beilagen"> Gruener Salat <br>
+        <input type="checkbox" name="Beilagen"> "Zum Besten" Spezial-Salat <br>
+        <input type="checkbox" name="Beilagen"> Caprese <br>
+      </form>
+    </div>
+
+    <div class="box3">
+      <h2>Zum Trinken</h2>
+      <form class="Getraenke" method="post">
+        <input type="checkbox" name="Getraenke"> Coca Cola 33cl <br>
+        <input type="checkbox" name="Getraenke"> Pepsi 33cl <br>
+        <input type="checkbox" name="Getraenke"> Fanta 33cl <br>
+        <input type="checkbox" name="Getraenke"> Sprite 33cl <br>
+        <input type="checkbox" name="Getraenke"> Evian still 33cl <br>
+        <input type="checkbox" name="Getraenke"> Evian sparkling 33cl <br>
+      </form>
+    </div>
+
+    <div class="box4">
+      <h2> Wo möchten Sie ihr Essen geniessen?</h2>
+      <form class="Wo_essen" method="post">
+        <input type="radio" name="Wo_essen" value="Im Restaurant geniessen"> Im Restaurant  <br>
+        <input type="radio" name="Wo_essen" value="Zu Hause geniessen"> Zu Hause  <br>
+      </form>
+      <br>
+      <h2> Bestellung abschliessen</h2>
+      <form class="Bestellen" method="post">
+        <input type="submit" name="Bestellen" value="Bestellung abschicken">
+      </form>
+    </div>
+
+  </div>
+
+  <h3 >Vielen Dank für ihre Bestellung</h3>
+
+  <hr>
+  <footer>
+    <div class="footer">
+
+      <div class="zeiten">
+        <p>
+          <strong><i>\00f6 ffnungszeiten</i></strong> <br>
           <i>Montag = Ruhetag</i> <br>
           <i>Dienstag - Freitag: 11:00 - 15:00 / 17:00 - 21:00 </i><br>
           <i>Samstag: 15:00 - 22:00 </i><br>
           <i>Sonntag: 18:00 - 21:00 </i><br>
         </p>
-        <br>
+      </div>
+
+      <div class="spruch">
         <p>
-          <i>"Hab Sonne im Herzen und Pizza im Bauch. Dann bist du gluecklich und satt bist du auch"</i>
-          <a href="https://www.istdaslustig.de/spruch/1379"> -> weitere lustige Sprueche.</a>
+          <i>"Hab Sonne im Herzen und Pizza im Bauch. Dann bist du gl\00fc cklich und satt bist du auch"</i>
+          <br>
+          <a href="https://www.istdaslustig.de/spruch/1379"> -> weitere lustige Spr\00fc che.</a>
         </p>
-        <br>
-          <strong><i>Adresse</i></strong> <br>
-            <i>Hauptstrasse 55</i> <br>
-            <i>8560 Maerstetten</i> <br>
-            <i>Tel.nr. 072 073 73 74</i> <br>
-        </div>
-      </footer>
-  </body>
+      </div>
+
+      <div class="adresse">
+        <strong><i>Adresse</i></strong> <br>
+        <i>Hauptstrasse 55</i> <br>
+        <i>8560 M\00e4 rstetten</i> <br>
+        <i>Tel.nr. 072 073 73 74</i> <br>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
 </html>

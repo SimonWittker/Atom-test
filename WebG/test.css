@@ -1,0 +1,46 @@
+body{
+  background-image: linear-gradient(green, yellow);
+  color:red;
+}
+
+table {
+  table-layout: fixed;
+  tab-size: 25%;
+  font-family: fantasy;
+  font-size: 2em;
+  margin-left: 5em;
+  width: 50%;
+  height: 50%;
+  border-width: 0.2em;
+  border-radius: 0.5em;
+  border-style: solid;
+  text-align: center;
+  table-layout: fixed;
+}
+
+td{
+  margin: 0;
+  border-style: groove;
+  border-width: 0.2em;
+  padding: 0;
+}
+ p {
+   font-weight: 2em;
+   text-align: center;
+   text-transform:capitalize ;
+   clear: left;
+ }
+
+
+}
+
+h2, h1 {
+  font-style: oblique;
+  font-size: 3em;
+}
+
+a:hover{
+  background-color: #fff;
+  color: #000;
+
+}

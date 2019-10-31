@@ -1,0 +1,136 @@
+body {  background-color: rgba(255, 255, 0, 0.6);  z-index: 10;  font-family: Geneva, inherit sans-serif; font-size: 10px;}
+hr {  border-width: thin;  border-color: black;  }
+h3 {  text-align: center;  width: 100%;  font-size: 3em;}
+.fa-w-14 { display: none;}
+
+
+/** Der Header *************************/
+.header {  text-align: center;  font-family: cursive;  font-size: 1.5em;  width: 100%;  height: 2em;  margin: auto;  padding: 0.3em 0em 0.2em 0em;
+    background-color: rgba(255, 255, 0, 0.7);  background-image: url(158502.png);  background-repeat: repeat-x;  background-size: 2.5em;  z-index: 1;  }
+
+/** Der Kopf der Seite mit Navigation *************************/
+.seitenkopf {  display: grid;  grid-template-columns: 2.5fr 1fr 1fr 1fr 1fr 1fr 1fr;  margin: auto 1% auto 1%; font-size: 1.2em}
+.kopftext {  grid-column-start: 1;  text-align: left;  font-family: cursive;  font-size: 2em; padding: 0 0 0 8%;  }
+.start{  grid-column-start: 2;  }
+.pizza{  grid-column-start: 3;  }
+.beilagen {  grid-column-start: 4;  }
+.zum_trinken{  grid-column-start: 5;  }
+.jetzt_bestellen {  grid-column-start: 6; }
+.feedback {  grid-column-start: 7;  }
+
+
+/** Der Hover-effekt bei den Links  **************************/
+a {  text-decoration: none;  border-style: solid;  border-color: rgba(255, 255, 0, 1.0);  display: block;  margin: auto 1% auto 1%;
+    padding: auto;  font-size: 1.5em;  color:rgba(5, 5, 5, 0.9);  text-align: center;  }
+a:hover {  background-color: rgba(255, 125, 0, 1.0);  color: rgba(255, 255, 255, 1.0);  }
+
+
+/** Der Hauptteil der Website für die Startseite mit _startseite und ansonsten für alle Seiten */
+#hauptteil_startseite, .hauptteil { display: grid;  grid-template-columns: 1fr 3fr 1fr;  }
+#hauptteil_startseite { height: 66em; margin: 3%;  }
+.hauptteil {  height: 30em;  margin: 1% 3% 1% 3%;  }
+.text, #text_startseite {  text-align: center;  font-size: 2.0em; margin: 2%;  }
+#text_startseite {  background-image: url(158502.png);  background-size: 74%;  background-repeat: no-repeat;  background-position: center; height: 600px; font-size: 2.5em;  }
+.text {  margin: 2%;  }
+.bild_startseite {  width:305px; height:642px; margin: 0; padding: 0; }
+.bild { width: 400px; height: 293px; margin: 1%;  }
+
+
+/** Die Tabelle für die Webseiten "Pizza", "beilagen"  und "getraenke" **/
+.tabelle { font-size: 1.5em; display: grid;  grid-template-columns: 3.5fr 1fr 0.5fr;  grid-template-rows: 1fr 1fr;  margin: 2% 3% 1% 3%;  }
+.platz1 {  grid-column-start: 1;  margin: 0 0 0 1%; height: 3em;  }
+.platz2 {  grid-column-start: 2;  margin: 0.5em;  }
+.platz3 {  grid-column-start: 3;  margin: 0.5em 1em 1.5em 1em;  }
+.warenkorb {  width: 2em; height: 2em;  }
+.photos {  display: grid;  grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; margin: 1% 3% 1% 3%;  }
+.photos img {  width: 198px; height: 145px; margin: 2em auto 0.5em auto; display: block; }
+.photos p { margin: 0; text-align: center; font-size: 1.5em;  }
+
+
+
+/** Die Formular-Seiten "jetzt_Bestellen" und "feedback"*************/
+.formular {  display: grid;  grid-template-columns: 1fr 1fr 1fr;  grid-template-rows: 1fr 1fr;  margin: 2%;
+    align-items: baseline;  justify-items: center;  font-size: 2em;   background-image: url(158502.png);  background-size: 50%;
+    background-repeat: no-repeat;  background-position: center; z-index: 9;  }
+.box1 {  grid-column-start: 1; margin: 2%; width: 70%; }
+.box2 {  grid-column-start: 2; margin: 2%; width: 70%; }
+.box3 {  grid-column-start: 3; margin: 2%; width: 70%; }
+.box4 {  grid-column-start: 2; margin: 2%; width: 70%; text-align: center; }
+.box4 form { text-align: left;}
+.Bestellen input { width: 20em; }
+
+
+/** Die Fusszeile *********/
+.footer {  margin: 1% 3.5% 1% 3.5%;  display: grid;  grid-template-columns: 1fr 2fr 0.5fr; font-size: 1.5em;}
+.adresse {  padding: 5%;  }
+.spruch {  padding: 3% 1% 3% 4%;  }
+
+
+
+/** Responsive für grosse Bildschirme ******/
+@media screen and (min-width: 1600px){
+body { font-size: 12px;}
+.seitenkopf { font-size: 1.4em; }
+#text_startseite {  background-size: 20em; }
+.hauptteil {  height: 355px;  }
+.bild { width: 480px; height: 351px; }
+.photos img { width: 198px; height: 145px; }
+.photos p { font-size: 1.5em;  }
+.formular { background-size: 33em; }
+.Bestellen input { width: 28em; }
+}
+
+
+/** Responsive für kleine Bildschirme ******/
+@media screen and (max-width: 1280px){
+.seitenkopf { font-size: 1.4em; }
+.bild_startseite {  width: 244px;  height: 514px;  margin: 1% 0 1% 0;  }
+.bild { width: 308px; height: 225px;  }
+body { font-size: 8px;  }
+#hauptteil_startseite { height: auto;}
+#text_startseite {  background-size: 90%; }
+.tabelle { font-size: 1.8em; }
+.photos img { width: 144px; height: 106px;  }
+.photos p { font-size: 2em;  }
+.footer { font-size: 1em; }
+}
+
+
+/** Responsive für Tablets******/
+@media screen and (max-width: 900px){
+.bild_startseite {  width: 156px;  height: 330px;  margin: 13% 0 1% 0;  }
+.bild { width: 200px; height: 155px;  }
+body  { font-size: 6px;  }
+#text_startseite {   background-size: 90%;   background-position: top; height: 600px; font-size: 2.5em;  }
+.tabelle { font-size: 2.2em; }
+.photos img { width: 130px; height: 95px; }
+.formular { font-size: 2.5em;  grid-template-columns: 1fr 1fr; }
+.box3 {  grid-column-start: 1;  }
+.footer { font-size: 1.5em; }
+textarea { width: 50%; }
+}
+
+
+/** Responsive für Mobile******/
+@media screen and (max-width: 670px) {
+.start, .pizza, .beilagen, .zum_trinken, .jetzt_bestellen, .feedback { display: none; }
+.kopftext { padding: 0 0 0 2%; }
+.seitenkopf {  display: grid;  grid-template-columns: 4fr 1fr;  margin: auto 1% auto 1%;  }
+.fa-w-14 { display: contents; grid-column-start: 2; height: 2em; width: 2em; align-content: space-between;; justify-content: space-between; margin-top: 2em;}
+.bild_startseite { display: none; }
+.bild { display: none; }
+#hauptteil_startseite, .hauptteil {  margin: 1%;  display: block;  }
+#hauptteil_startseite { height: 62em; }
+.hauptteil { height: 15em; }
+#text_startseite {   background-size: 66%;   background-position: top; height: 600px; font-size: 2.5em;  }
+.photos { display: none;}
+.tabelle p { margin: 0.5em;  }
+.platz1 { height: 8em;  }
+.formular {  grid-template-columns: 1fr; grid-template-rows: 0.8fr 0.6fr 0.7fr 0.9fr ; background-image: none;}
+.box2 {  grid-column-start: 1;  }
+.box4 {  grid-column-start: 1; text-align: left; }
+textarea { width: 75%; }
+.adresse, .spruch, .zeiten { padding: 2%;}
+.footer { grid-template-columns: 1fr; grid-template-rows: 3fr; }
+
+}

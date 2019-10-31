@@ -1,69 +1,175 @@
 <!DOCTYPE html>
-<html lang="de-CH" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="Beilagen" content="Snacks, Pizzabrot, Knoblauchbrot, Salate, Caprese">
-    <title>Beilagen</title>
-  </head>
-  <body>
-    <header>
-    <h3>Pizzeria "Zum Besten"</h3>
-    <hr>
-    <div style=background-color:yellow > <br>
-    <h2>Startseite von Pizzeria zum Besten</h2>
-      <nav>
-        <ul>
-          <li><a href="index.html">Startseite</a> </li>
-          <li><a href="pizza.html">Pizza</a> </li>
-          <li><a href="beilagen.html">Beilagen</a> </li>
-          <li><a href="getraenke.html">Zum trinken</a> </li>
-          <li><a href="jetzt_Bestellen.html">Jetzt Bestellen</a> </li>
-          <li><a href="feedback.html">Feedback?</a></li>
-        </ul>
-      </nav>
-    <br>
+<html lang="de-ch" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,  minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="Beilagen" content="Snacks, Pizzabrot, Knoblauchbrot, Salate, Caprese">
+  <title>Beilagen</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h3 class="header"> <strong> Pizzeria "Zum Besten"</strong></h3>
+
+    <div class="seitenkopf">
+      <h2 class="kopftext">Pizzeria "Zum Besten"</h2>
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="align-justify" class="svg-inline--fa fa-align-justify fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor"
+          d="M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z">
+        </path>
+      </svg>
+      <a class="start" href="index.html">Startseite</a>
+      <a class="pizza" href="pizza.html">Pizza</a>
+      <a class="beilagen" href="beilagen.html">Beilagen</a>
+      <a class="zum_trinken" href="getraenke.html">Getr\00e4 nke</a>
+      <a class="jetzt_bestellen" href="jetzt_Bestellen.html">Bestellen</a>
+      <a class="feedback" href="feedback.html">Feedback?</a>
+
     </div>
+    <br>
     <hr>
-    </header>
+  </header>
+
+  <div class="hauptteil">
+
+    <img class="bild" src="712667.png" alt="Aperitif Pizzabrot" title="Unser Aperitif: Pizzabrot">
+
+    <div class="text">
       <h1>Beilagen</h1>
       <p>
         Neben den verschiedenen Pizzen bieten wir noch kleine Beilagen oder schmackhafte Snacks an.
       </p>
-      <hr>
-      <table>
-        <tr><td><strong>Pizzabrot</strong> <br/><i>Ein Apperitiv aus Pizzateig mit Tomaten und Mozzarella</i></td><td>Fr. 5.50</td><td><img width="15" height="16" src="Warenkorb.png" alt="Icon von einem Warenkorb zum direkt bestellen." ></td></tr>
-        <tr><td><strong>"Chnoblibrot"</strong><br/><i>Das klassische getoastete Bugette mit Knoblauchoel</i></td><td>Fr. 6.50</td><td><img width="15" height="16" src="Warenkorb.png" alt="Icon von einem Warenkorb zum direkt bestellen." ></td></tr>
-        <tr><td><strong>Gruener Salat</strong><br/><i>Ein Salat aus gruenem Blattsalat</i></td><td>Fr. 4.50</td><td><img width="15" height="16" src="Warenkorb.png" alt="Icon von einem Warenkorb zum direkt bestellen." ></td></tr>
-        <tr><td><strong>"Zum Besten" Spezial-Salat</strong><br/><i>Ein Salat aus Nuesslisalat, Kichererbsen, Birnen und Randenstuecken</i></td><td>Fr. 7.50</td><td><img width="15" height="16" src="Warenkorb.png" alt="Icon von einem Warenkorb zum direkt bestellen." ></td></tr>
-        <tr><td><strong>Caprese</strong><br/><i>Ein Salat aus Tomaten und Mozzarella</i></td><td>Fr. 5.50</td><td><img width="15" height="16" src="Warenkorb.png" alt="Icon von einem Warenkorb zum direkt bestellen." ></td></tr>
-      </table>
-      <hr>
-      <img width="96" height="71" src="712667.png"  alt="Apperitiv Pizzabrot"         title="Unser Apperitiv: Pizzabrot">
-      <img width="96" height="71" src="3535048.png" alt="Knoblauchbrot 'Chnoblibrot'" title='Der allseits beliebte Klassiker: Das "Chnoblibrot"'>
-      <img width="96" height="71" src="2376777.png" alt="Gruener Salat"                title="Ein schmackhafte gruener Blattsalat">
-      <img width="96" height="71" src="1786327.png" alt="Kichererbsen-Salat"          title="Unser Spezial-Salat: Ein Nuessli-Kichererbsen garniert mit Birnen und Randenstuecken">
-      <img width="96" height="71" src="3337623.png" alt="Caprese"                     title="Ein appetitlicher Caprese-Salat">
-    <hr>
-    <footer>
-      <div style="background-color:yellow">
-      <p>
-        <strong><i>Oeffnungszeiten</i></strong> <br>
+    </div>
+
+    <img class="bild" src="2376777.png" alt="Gruener Salat" title="Ein schmackhafte gruener Blattsalat">
+
+  </div>
+
+  <hr>
+
+  <div class="tabelle">
+
+    <div class="platz1">
+      <p><strong>Pizzabrot</strong> <br>
+        <i>Ein Apperitiv aus Pizzateig mit Tomaten und Mozzarella</i></p>
+    </div>
+    <div class="platz2">
+      <p>Fr. 5.50</p>
+    </div>
+    <div class="platz3">
+      <img class="warenkorb" src="Warenkorb.png" alt="Icon von einem Warenkorb zum direkt bestellen." title="Hier klicken zum direkt bestellen">
+    </div>
+
+    <div class="platz1">
+      <p><strong>"Chnoblibrot"</strong> <br>
+        <i>Das klassische getoastete Bagette mit Knoblauch\00f6 l</i></p>
+    </div>
+    <div class="platz2">
+      <p>Fr. 6.50</p>
+    </div>
+    <div class="platz3">
+      <img class="warenkorb" src="Warenkorb.png" alt="Icon von einem Warenkorb zum direkt bestellen." title="Hier klicken zum direkt bestellen">
+    </div>
+
+    <div class="platz1">
+      <p><strong>Gr\00fc ner Salat</strong> <br>
+        <i>Ein Salat aus gr\00fc nem Blattsalat</i></p>
+    </div>
+    <div class="platz2">
+      <p>Fr. 4.50</p>
+    </div>
+    <div class="platz3">
+      <img class="warenkorb" src="Warenkorb.png" alt="Icon von einem Warenkorb zum direkt bestellen." title="Hier klicken zum direkt bestellen">
+    </div>
+
+    <div class="platz1">
+      <p><strong>"Zum Besten" Spezial-Salat</strong> <br>
+        <i>Ein Salat aus N\00fc sslisalat, Kichererbsen, Birnen und Randenst\00fc cken</i></p>
+    </div>
+    <div class="platz2">
+      <p>Fr. 7.50</p>
+    </div>
+    <div class="platz3">
+      <img class="warenkorb" src="Warenkorb.png" alt="Icon von einem Warenkorb zum direkt bestellen." title="Hier klicken zum direkt bestellen">
+    </div>
+
+    <div class="platz1">
+      <p><strong>Caprese</strong> <br>
+        <i>Ein Salat aus Tomaten und Mozzarella</i></p>
+    </div>
+    <div class="platz2">
+      <p>Fr. 5.50</p>
+    </div>
+    <div class="platz3">
+      <img class="warenkorb" src="Warenkorb.png" alt="Icon von einem Warenkorb zum direkt bestellen." title="Hier klicken zum direkt bestellen">
+    </div>
+
+  </div>
+
+
+  <div class="photos">
+
+    <div class="photo1">
+      <img src="3535048.png" alt="Knoblauchbrot 'Chnoblibrot'" title='Der allseits beliebte Klassiker: Das "Chnoblibrot"'>
+      <p>"Chnoblibrot"</p>
+    </div>
+
+    <div class="photo2">
+      <img src="1786327.png" alt="Kichererbsen-Salat" title="Unser Spezial-Salat: Ein Nuessli-Kichererbsen garniert mit Birnen und Randenstuecken">
+      <p>Kichererbsen-Salat</p>
+    </div>
+
+    <div class="photo3">
+      <img src="3337623.png" alt="Caprese" title="Ein appetitlicher Caprese-Salat">
+      <p>Caprese-Salat</p>
+    </div>
+
+    <div class="photo4">
+      <img src="712667.png" alt="Aperitif Pizzabrot" title="Unser Aperitif: Pizzabrot">
+      <p>Pizzabrot</p>
+    </div>
+
+    <div class="photo5">
+      <img src="2376777.png" alt="Gruener Salat" title="Ein schmackhafte gruener Blattsalat">
+      <p>Pizzabrot</p>
+    </div>
+
+  </div>
+
+  <hr>
+  <footer>
+    <div class="footer">
+
+      <div class="zeiten">
+        <p>
+          <strong><i>\00f6 ffnungszeiten</i></strong> <br>
           <i>Montag = Ruhetag</i> <br>
           <i>Dienstag - Freitag: 11:00 - 15:00 / 17:00 - 21:00 </i><br>
           <i>Samstag: 15:00 - 22:00 </i><br>
           <i>Sonntag: 18:00 - 21:00 </i><br>
         </p>
-        <br>
+      </div>
+
+      <div class="spruch">
         <p>
-          <i>"Hab Sonne im Herzen und Pizza im Bauch. Dann bist du gluecklich und satt bist du auch"</i>
-          <a href="https://www.istdaslustig.de/spruch/1379"> -> weitere lustige Sprueche.</a>
+          <i>"Hab Sonne im Herzen und Pizza im Bauch. Dann bist du gl\00fc cklich und satt bist du auch"</i>
+          <br>
+          <a href="https://www.istdaslustig.de/spruch/1379"> -> weitere lustige Spr\00fc che.</a>
         </p>
-        <br>
-          <strong><i>Adresse</i></strong> <br>
-            <i>Hauptstrasse 55</i> <br>
-            <i>8560 Maerstetten</i> <br>
-            <i>Tel.nr. 072 073 73 74</i> <br>
-        </div>
-      </footer>
-  </body>
+      </div>
+
+      <div class="adresse">
+        <strong><i>Adresse</i></strong> <br>
+        <i>Hauptstrasse 55</i> <br>
+        <i>8560 M\00e4 rstetten</i> <br>
+        <i>Tel.nr. 072 073 73 74</i> <br>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
 </html>

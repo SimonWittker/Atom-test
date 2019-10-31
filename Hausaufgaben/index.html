@@ -1,60 +1,86 @@
 <!DOCTYPE html>
 <html lang="de-ch" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name='Pizzeria "Zum Besten"' content="Pizzeria Pizza Bestellen">
-    <title>Pizzeria "Zum Besten"</title>
-  </head>
-  <body>
-    <header>
-    <h3>Pizzeria "Zum Besten"</h3>
-    <hr>
-    <div style=background-color:yellow > <br>
-      <h2>Startseite von Pizzeria "Zum Besten"</h2>
-        <nav>
-          <ul>
-            <li><a href="index.html">Startseite</a> </li>
-            <li><a href="pizza.html">Pizza</a> </li>
-            <li><a href="beilagen.html">Beilagen</a> </li>
-            <li><a href="getraenke.html">Zum trinken</a> </li>
-            <li><a href="jetzt_Bestellen.html">Jetzt Bestellen</a> </li>
-            <li><a href="feedback.html">Feedback?</a></li>
-          </ul>
-        </nav>
-      <br>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,  minimum-scale=1.0, maximum-scale=1.0">
+  <meta name='Pizzeria "Zum Besten"' content="Pizzeria, Startseite, Pizza, Bestellen">
+  <title>Pizzeria "Zum Besten"</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h3 class="header"> <strong> Pizzeria "Zum Besten"</strong></h3>
+
+    <div class="seitenkopf">
+      <h2 class="kopftext">Pizzeria "Zum Besten"</h2>
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="align-justify" class="svg-inline--fa fa-align-justify fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor"
+          d="M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z">
+        </path>
+      </svg>
+      <a class="start" href="index.html">Startseite</a>
+      <a class="pizza" href="pizza.html">Pizza</a>
+      <a class="beilagen" href="beilagen.html">Beilagen</a>
+      <a class="zum_trinken" href="getraenke.html">Getr\00e4 nke</a>
+      <a class="jetzt_bestellen" href="jetzt_Bestellen.html">Bestellen</a>
+      <a class="feedback" href="feedback.html">Feedback?</a>
+
     </div>
+    <br>
     <hr>
-    </header>
-      <img width="405" height="835" src="366111.png" alt="Pizzaiolo vollendet eine feine Pizza." title="Ein Pizzaiolo vollendet eine feine Pizza."> <br>
-      <h1>Wilkommen in der Pizzeria "Zum Besten"</h1> <br>
+  </header>
+
+  <div id="hauptteil_startseite">
+
+    <img class="bild_startseite" src="366111.png" alt="Pizzaiolo vollendet eine feine Pizza." title="Ein Pizzaiolo vollendet eine feine Pizza.">
+
+    <div id="text_startseite">
+      <h1>Wilkommen in der Pizzeria <br> "Zum Besten"</h1> <br>
+      <p>
+        Wir sind ein aufstrebender Familienbetrieb mit einem gemeinsamen Lebenstraum: <br>
+        <strong> Der Star unter den Pizzerien zu werden! </strong><br>
+        Besuchen Sie uns oder nutzen sie unseren Lieferservice und lassen Sie sich von unseren Pizzaiolos verw\00f6 hnen.
+      </p>
+    </div>
+
+    <img class="bild_startseite" src="2589575.png" alt="Leckere Pizza, bereit zum Geniessen." title="Leckere Pizza, bereit zum Geniessen.">
+
+  </div>
+  <hr>
+
+  <footer>
+    <div class="footer">
+
+      <div class="zeiten">
         <p>
-          Wir sind ein aufstrebender Familienbetrieb mit einem gemensamen Lebenstraum: <br>
-          <strong>Die beste Pizzeria in der Schweiz zu werden! </strong><br>
-          Besuchen Sie uns oder nutzen sie unseren Lieferservis und lassen Sie sich von unseren Pizzaiolos verwoehnen.
+          <strong><i>\00f6 ffnungszeiten</i></strong> <br>
+          <i>Montag = Ruhetag</i> <br>
+          <i>Dienstag - Freitag: 11:00 - 15:00 / 17:00 - 21:00 </i><br>
+          <i>Samstag: 15:00 - 22:00 </i><br>
+          <i>Sonntag: 18:00 - 21:00 </i><br>
         </p>
-      <img width="405" height="835" src="2589575.png" alt="Leckere Pizza, bereit zum Geniessen." title="Leckere Pizza, bereit zum Geniessen."> <br>
-      <img width="960" height="705" src="690975.png" alt="Ein Blick in ein stilvolles kleines Restaurant." title="Ein Blick in ein stilvolles kleines Restaurant."> <br>
-    <hr>
-      <footer>
-        <div style="background-color:yellow">
+      </div>
+
+      <div class="spruch">
         <p>
-          <strong><i>Oeffnungszeiten</i></strong> <br>
-            <i>Montag = Ruhetag</i> <br>
-            <i>Dienstag - Freitag: 11:00 - 15:00 / 17:00 - 21:00 </i><br>
-            <i>Samstag: 15:00 - 22:00 </i><br>
-            <i>Sonntag: 18:00 - 21:00 </i><br>
-          </p>
+          <i>"Hab Sonne im Herzen und Pizza im Bauch. Dann bist du gl\00fc cklich und satt bist du auch"</i>
           <br>
-          <p>
-            <i>"Hab Sonne im Herzen und Pizza im Bauch. Dann bist du gluecklich und satt bist du auch"</i>
-            <a href="https://www.istdaslustig.de/spruch/1379"> -> weitere lustige Sprueche.</a>
-          </p>
-          <br>
-            <strong><i>Adresse</i></strong> <br>
-              <i>Hauptstrasse 55</i> <br>
-              <i>8560 Maerstetten</i> <br>
-              <i>Tel.nr. 072 073 73 74</i> <br>
-        </div>
-      </footer>
-  </body>
+          <a href="https://www.istdaslustig.de/spruch/1379"> -> weitere lustige Spr\00fc che.</a>
+        </p>
+      </div>
+
+      <div class="adresse">
+        <strong><i>Adresse</i></strong> <br>
+        <i>Hauptstrasse 55</i> <br>
+        <i>8560 M\00e4 rstetten</i> <br>
+        <i>Tel.nr. 072 073 73 74</i> <br>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
 </html>

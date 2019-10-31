@@ -1,74 +1,117 @@
 <!DOCTYPE html>
-<html lang="de-CH" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="Feedback" content="feedback geben, Kommentar">
-    <title>Feedback</title>
-  </head>
-  <body>
-      <header>
-      <h3>Pizzeria "Zum Besten"</h3>
-      <hr>
-      <div style=background-color:yellow > <br>
-      <h2>Startseite von Pizzeria zum Besten</h2>
-        <nav>
-          <ul>
-            <li><a href="index.html">Startseite</a> </li>
-            <li><a href="pizza.html">Pizza</a> </li>
-            <li><a href="beilagen.html">Beilagen</a> </li>
-            <li><a href="getraenke.html">Zum trinken</a> </li>
-            <li><a href="jetzt_Bestellen.html">Jetzt Bestellen</a> </li>
-            <li><a href="feedback.html">Feedback?</a></li>
-          </ul>
-        </nav>
-        <br>
-      </div>
-      <hr>
-      </header>
+<html lang="de-ch" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,  minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="Feedback" content="feedback geben, Kommentar">
+  <title>Feedback</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="a">
+  <header>
+    <h3 class="header"> <strong> Pizzeria "Zum Besten"</strong></h3>
+
+    <div class="seitenkopf">
+      <h2 class="kopftext">Pizzeria "Zum Besten"</h2>
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="align-justify" class="svg-inline--fa fa-align-justify fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path fill="currentColor"
+          d="M432 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-128H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z">
+        </path>
+      </svg>
+      <a class="start" href="index.html">Startseite</a>
+      <a class="pizza" href="pizza.html">Pizza</a>
+      <a class="beilagen" href="beilagen.html">Beilagen</a>
+      <a class="zum_trinken" href="getraenke.html">Getr\00e4 nke</a>
+      <a class="jetzt_bestellen" href="jetzt_Bestellen.html">Bestellen</a>
+      <a class="feedback" href="feedback.html">Feedback?</a>
+
+    </div>
+    <br>
+    <hr>
+  </header>
+
+  <div class="text">
     <h1>Sag uns deine Meinung: Gib ein Feedback.</h1>
-      <hr>
-      <form class="Feedback"  method="post">
-        <h3>Wie hat es Ihnen geschmekt?</h3>
-          <input type="radio" name="Geschmackstest" value="Sehr gut"> Sehr gut<br>
-          <input type="radio" name="Geschmackstest" value="Gut"> Gut<br>
-          <input type="radio" name="Geschmackstest" value="Mittelmaessig"> Mittelmaessig<br>
-          <input type="radio" name="Geschmackstest" value="Schlecht"> Schlecht<br>
-        <h3>Was halten sie von unseren Preisen? </h3>
-          <input type="radio" name="Kosten" value="Angemessen"> Angemessen<br>
-          <input type="radio" name="Kosten" value="Zu billig"> Zu billig<br>
-          <input type="radio" name="Kosten" value="Zu teuer"> Zu teuer<br>
-        <h3>Wer bist du?</h3>
-          <input type="text" name="Vorname" placeholder="Vorname"><br>
-          <input type="text" name="Nachname" placeholder="Nachname"><br>
-          <input type="email" name="Emailadresse" placeholder="Emailadresse"><br>
-        <h3>Was können wir besser machen?</h3><br>
-        <textarea name="Kommentar" rows="8" cols="80" placeholder="Dein Feedback">
-        </textarea>
+  </div>
+
+  <div class="formular">
+
+    <div class="box1">
+      <form method="post">
+        <h2>Wie hat es Ihnen geschmeckt?</h2>
+        <input type="radio" name="Geschmackstest" value="Sehr gut"> War sehr gut<br>
+        <input type="radio" name="Geschmackstest" value="Gut"> Lecker <br>
+        <input type="radio" name="Geschmackstest" value="Mittelmaessig"> So-lala<br>
+        <input type="radio" name="Geschmackstest" value="Schlecht"> Nicht gut<br>
+      </form>
+    </div>
+
+    <div class="box2">
+      <form method="post">
+        <h2>Was halten Sie von unseren Preisen? </h2>
+        <input type="radio" name="Kosten" value="Angemessen"> Angemessen<br>
+        <input type="radio" name="Kosten" value="Zu billig"> Zu niedrig<br>
+        <input type="radio" name="Kosten" value="Zu teuer"> Zu hoch<br>
+      </form>
+    </div>
+
+    <div class="box3">
+      <form method="post">
+        <h2>Wer sind Sie?</h2>
+        <input type="text" name="Vorname" placeholder="Vorname"><br>
+        <input type="text" name="Nachname" placeholder="Nachname"><br>
+        <input type="email" name="Emailadresse" placeholder="Emailadresse"><br>
+      </form>
+    </div>
+
+    <div class="box4">
+      <form method="post">
+        <h2>Was können wir besser machen?</h2><br>
+        <textarea name="Kommentar" rows="8" cols="40" placeholder="Dein Feedback">
+          </textarea>
         <br>
         <input type="submit" name="KlickMichButton" value="Feedback senden">
       </form>
-      <h2>Wir sind ihnen dankbar für jedes Feedback</h2>
-      <hr>
-      <footer>
-        <div style="background-color:yellow">
+    </div>
+  </div>
+
+  <h3>Wir sind Ihnen dankbar für jedes Feedback</h3>
+
+  <hr>
+
+  <footer>
+    <div class="footer">
+
+      <div class="zeiten">
         <p>
-          <strong><i>Oeffnungszeiten</i></strong> <br>
-            <i>Montag = Ruhetag</i> <br>
-            <i>Dienstag - Freitag: 11:00 - 15:00 / 17:00 - 21:00 </i><br>
-            <i>Samstag: 15:00 - 22:00 </i><br>
-            <i>Sonntag: 18:00 - 21:00 </i><br>
-          </p>
+          <strong><i>\00f6 ffnungszeiten</i></strong> <br>
+          <i>Montag = Ruhetag</i> <br>
+          <i>Dienstag - Freitag: 11:00 - 15:00 / 17:00 - 21:00 </i><br>
+          <i>Samstag: 15:00 - 22:00 </i><br>
+          <i>Sonntag: 18:00 - 21:00 </i><br>
+        </p>
+      </div>
+
+      <div class="spruch">
+        <p>
+          <i>"Hab Sonne im Herzen und Pizza im Bauch. Dann bist du gl\00fc cklich und satt bist du auch"</i>
           <br>
-          <p>
-            <i>"Hab Sonne im Herzen und Pizza im Bauch. Dann bist du gluecklich und satt bist du auch"</i>
-            <a href="https://www.istdaslustig.de/spruch/1379"> -> weitere lustige Sprueche.</a>
-          </p>
-          <br>
-            <strong><i>Adresse</i></strong> <br>
-              <i>Hauptstrasse 55</i> <br>
-              <i>8560 Maerstetten</i> <br>
-              <i>Tel.nr. 072 073 73 74</i> <br>
-          </div>
-        </footer>
-  </body>
+          <a href="https://www.istdaslustig.de/spruch/1379"> -> weitere lustige Spr\00fc che.</a>
+        </p>
+      </div>
+
+      <div class="adresse">
+        <strong><i>Adresse</i></strong> <br>
+        <i>Hauptstrasse 55</i> <br>
+        <i>8560 M\00e4 rstetten</i> <br>
+        <i>Tel.nr. 072 073 73 74</i> <br>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
 </html>
